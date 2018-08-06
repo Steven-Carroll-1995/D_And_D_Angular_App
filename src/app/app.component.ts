@@ -11,8 +11,6 @@ export class AppComponent implements OnInit {
 
 public constructor(private titleService: Title) {}
 
-  title = 'D&D Angular App';
-
   public setTitle( newTitle) {
     this.titleService.setTitle( newTitle );
   }
