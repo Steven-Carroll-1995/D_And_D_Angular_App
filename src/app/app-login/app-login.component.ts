@@ -2,7 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-app-login',
+  selector: 'app-login',
   templateUrl: './app-login.component.html',
   styleUrls: ['./app-login.component.css']
 })
