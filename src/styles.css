@@ -21,12 +21,12 @@
   src: url(/assets/Fonts/BebasNeue/BebasNeue\ Thin.otf);
 }
 
-#title{
+.title{
   font-family: BebasNeueBold,Helvetica, sans-serif;
   font-size: 3em;
 }
 
-#subTitle{
+.subTitle{
   font-family: BebasNeueRegular, Helvetica, sans-serif;
   font-size: 2em;
 }

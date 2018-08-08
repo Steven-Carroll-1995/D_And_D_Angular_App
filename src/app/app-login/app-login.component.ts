@@ -8,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppLoginComponent implements OnInit {
 
+  testUsername: String = 'Test';
+  testPW: String = 'Test';
+
   constructor() { }
 
   ngOnInit() {
+  }
+  onClickSubmit(data) {
+
+    if ( data.usernameid.toLowerCase() === this.testUsername.toLowerCase() && data.passwd === this.testPW) {
+
+      alert('Successful Login');
+
+     } else {
+       alert('Unsuccessful Login');
+     }
+
   }
 
 }
