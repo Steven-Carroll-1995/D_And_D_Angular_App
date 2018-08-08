@@ -1,5 +1,6 @@
 // This Component Will Display The Login Screen
 import { Component, OnInit } from '@angular/core';
+import { AlertService } from '../../_services/alert-service.service';
 
 @Component({
   selector: 'app-login',
@@ -11,7 +12,7 @@ export class AppLoginComponent implements OnInit {
   testUsername: String = 'Test';
   testPW: String = 'Test';
 
-  constructor() { }
+  constructor(private alertService: AlertService) { }
 
   ngOnInit() {
   }
@@ -19,10 +20,10 @@ export class AppLoginComponent implements OnInit {
 
     if ( data.usernameid.toLowerCase() === this.testUsername.toLowerCase() && data.passwd === this.testPW) {
 
-      alert('Successful Login');
+      this.alertService.Error('Successful Login');
 
      } else {
-       alert('Unsuccessful Login');
+      this.alertService.Error('Failed Login');
      }
 
   }
