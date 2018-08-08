@@ -11,5 +11,4 @@ export class AppComponent {
 
 public constructor(private titleService: Title) {}
 
-
 }

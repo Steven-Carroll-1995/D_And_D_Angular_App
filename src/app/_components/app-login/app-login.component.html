@@ -1,9 +1,12 @@
 <div class="smallSplit left">
+
   <div class="centered">
+
     <h1 class="title">D&D App</h1>
     <h2 class="subTitle">Login</h2>
 
     <form #userlogin = "ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)" >
+      <p class="error" *ngIf="messageToShow">{{message}}</p>
       <input type = "text" name = "usernameid" placeholder = "Username" ngModel>
       <br/>
       <input type = "password" name = "passwd" placeholder="Password" ngModel>

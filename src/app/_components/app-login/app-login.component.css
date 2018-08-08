@@ -44,5 +44,9 @@
 }
 
 form {
+  font-family: BebasNeueBook;
+}
+
+.error {
   font-family: BebasNeueRegular;
 }

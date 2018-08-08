@@ -11,8 +11,8 @@ import { LoginVerificationService } from '../../_services/login-verification.ser
 })
 export class AppLoginComponent implements OnInit {
 
-  testUsername: String = 'Test';
-  testPW: String = 'Test';
+  message: String = '';
+  messageToShow = false;
 
   constructor(private alertService: AlertService,
               private titleService: Title,
@@ -23,7 +23,8 @@ export class AppLoginComponent implements OnInit {
   }
   onClickSubmit(data) {
 
-   this.alertService.Error(this.loginService.verify(data.usernameid.toLowerCase(), data.passwd)) ;
+   this.message = this.loginService.verify(data.usernameid.toLowerCase(), data.passwd);
+   this.messageToShow = true;
 
   }
 
