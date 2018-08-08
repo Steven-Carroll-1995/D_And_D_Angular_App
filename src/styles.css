@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+  font-family: BebasNeueBold;
+  src: url(/assets/Fonts/BebasNeue/BebasNeue\ Bold.otf);
+}
+@font-face {
+  font-family: BebasNeueBook;
+  src: url(/assets/Fonts/BebasNeue/BebasNeue\ Book.otf);
+}
+@font-face {
+  font-family: BebasNeueLight;
+  src: url(/assets/Fonts/BebasNeue/BebasNeue\ Light.otf);
+}
+@font-face {
+  font-family: BebasNeueRegular;
+  src: url(/assets/Fonts/BebasNeue/BebasNeue\ Regular.otf);
+}
+@font-face {
+  font-family: BebasNeueThin;
+  src: url(/assets/Fonts/BebasNeue/BebasNeue\ Thin.otf);
+}
+
+.title{
+  font-family: BebasNeueBold,Helvetica, sans-serif;
+  font-size: 3em;
+}
+
+.subTitle{
+  font-family: BebasNeueRegular, Helvetica, sans-serif;
+  font-size: 2em;
+}

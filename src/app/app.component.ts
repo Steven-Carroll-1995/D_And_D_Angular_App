@@ -1,4 +1,4 @@
-import { Component, setTestabilityGetter, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
@@ -7,18 +7,9 @@ import { Title } from '@angular/platform-browser';
   styleUrls: ['./app.component.css']
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent {
 
 public constructor(private titleService: Title) {}
 
-  title = 'D&D Angular App';
-
-  public setTitle( newTitle) {
-    this.titleService.setTitle( newTitle );
-  }
-
-  ngOnInit() {
-    this.setTitle('D&D App');
-  }
 
 }
