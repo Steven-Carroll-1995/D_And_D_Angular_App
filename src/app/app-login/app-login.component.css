@@ -42,3 +42,7 @@
   width: 150px;
   border-radius: 50%;
 }
+
+form {
+  font-family: BebasNeueRegular;
+}
