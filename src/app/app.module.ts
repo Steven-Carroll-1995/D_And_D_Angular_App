@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { AppLoginComponent } from './app-login/app-login.component';
+import { AppLoginComponent } from './_components/app-login/app-login.component';
+import { AlertComponent } from './_directives/alert/alert.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AppLoginComponent
+    AppLoginComponent,
+    AlertComponent
   ],
   imports: [
     BrowserModule,
