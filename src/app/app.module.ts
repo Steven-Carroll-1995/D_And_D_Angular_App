@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { AppLoginComponent } from './_components/app-login/app-login.component';
 import { AlertComponent } from './_directives/alert/alert.component';
+import { AppRoutingModule } from './/app-routing.module';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AlertComponent } from './_directives/alert/alert.component';
     FormsModule,
     RouterModule.forRoot([
       {path: 'Login', component: AppLoginComponent}
-    ])
+    ]),
+    AppRoutingModule
   ],
   providers: [
     Title
