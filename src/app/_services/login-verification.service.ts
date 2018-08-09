@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { markParentViewsForCheckProjectedViews } from '../../../node_modules/@angular/core/src/view/util';
+import { Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
@@ -14,14 +14,14 @@ export class LoginVerificationService {
   private pwFail: String = 'Wrong Password';
   private tooShort: String = 'Password Too Short';
 
-  constructor() { }
+  constructor(private router: Router) { }
 
-  verify(username: String, password: String) {
+  verify(username: String, password: String, route: String) {
 
     if (password.length > 3) {
       if (username.toLowerCase() === this.testUsername.toLowerCase()) {
         if (password === this.testPW) {
-          return this.Success;
+            this.router.navigate(['/dashboard']);
           } else {
             return this.pwFail;
           }

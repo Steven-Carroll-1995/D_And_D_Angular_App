@@ -23,7 +23,7 @@ export class AppLoginComponent implements OnInit {
   }
   onClickSubmit(data) {
 
-   this.message = this.loginService.verify(data.usernameid.toLowerCase(), data.passwd);
+   this.message = this.loginService.verify(data.usernameid.toLowerCase(), data.passwd, '/dashboard');
    this.messageToShow = true;
 
   }
