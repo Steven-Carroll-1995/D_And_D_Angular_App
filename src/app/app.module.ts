@@ -9,12 +9,14 @@ import { AppLoginComponent } from './_components/app-login/app-login.component';
 import { AlertService } from './_services/alert-service.service';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
 import { AppRoutingModule } from './/app-routing.module';
+import { AppNavbarComponent } from './_components/app-navbar/app-navbar.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     AppLoginComponent,
-    DashboardComponent
+    DashboardComponent,
+    AppNavbarComponent
   ],
   imports: [
     BrowserModule,
