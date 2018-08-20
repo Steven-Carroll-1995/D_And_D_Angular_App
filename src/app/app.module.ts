@@ -10,6 +10,7 @@ import { AlertService } from './_services/alert-service.service';
 import { DashboardComponent } from './_components/dashboard/dashboard.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { AppNavbarComponent } from './_components/app-navbar/app-navbar.component';
+import { LoggedInService } from './_services/logged-in.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AppNavbarComponent } from './_components/app-navbar/app-navbar.componen
   ],
   providers: [
     Title,
-    AlertService
+    AlertService,
+    LoggedInService
   ],
   bootstrap: [AppComponent]
 })
