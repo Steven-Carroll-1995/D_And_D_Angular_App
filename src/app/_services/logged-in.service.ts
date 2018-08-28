@@ -6,7 +6,7 @@ import { UserService } from '../_services/user.service';
   providedIn: 'root'
 })
 export class LoggedInService implements CanActivate {
-  constructor(private userService: UserService, private router: Router) {};
+  constructor(private userService: UserService, private router: Router) {}
 
   canActivate() {
     if (this.userService.isLoggedIn()) {
